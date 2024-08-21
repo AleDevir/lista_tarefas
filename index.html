@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de tarefas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <section class="container" id="agendarTarefa">
+        <img src="img/undraw_Schedule_re_2vro.png" class="imgAgenda" alt="agenda">
+        <h1>Agendar minhas tarefas:</h1>
+        <p class="blocoInputBotao">
+            <input type="text" class="input-tarefa">
+            <input type="date" id="diaTarefa" class="diaTarefa">
+            <button onclick="criarTarefa()" id="btn-tarefa" disabled>Adicionar</button>
+        <ul class="erros"></ul>
+        </p>
+    </section>
+
+    <div class="tarefasAgendadas" id="tarefasAgendadas">
+        <h1 class="titulo">Tarefas agendadas</h1>
+        <img src="img/calendario.png" alt="listadetarefas" class="imgLista">
+        <ul class="lista"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
